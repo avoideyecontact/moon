@@ -1,0 +1,11 @@
+// Прилипание футера к нижней части страницы, при отсутствии контента
+
+.page-body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer {
+  margin-top: auto;
+}
