@@ -1,0 +1,274 @@
+@media (max-width: $tablet-width - 1px) {
+
+  .page-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    display: block;
+    order: 1;
+    padding: 25px 17px;
+    padding-bottom: 0;
+  }
+
+  .page-header__toggle {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $color-torquoise;
+    border: none;
+    order: 3;
+    box-sizing: border-box;
+  }
+
+  .page-header__toggle::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.8 21h22.4v-1H3.9v1zm0-6.3h22.4v-1H3.9v1zm0-7.2v1h22.4v-1H3.9z' fill='%23000'/%3E%3C/svg%3E%0A");
+    top: 11px;
+    left: 10px;
+  }
+
+  .page-header__menu {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 100px;
+    box-sizing: border-box;
+    background-color: $color-white;
+    order: 2;
+  }
+
+  .page-header--opened {
+    .page-header__toggle {
+      position: fixed;
+      right: 0;
+      background-color: $color-white;
+      }
+
+    .page-header__toggle::before {
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 23.7213L23 1M23 23.7213L1 1' stroke='%23141517' stroke-opacity='0.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      top: 13px;
+      left: 13px;
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  .page-header--closed {
+    .page-header__menu {
+      display: none;
+    }
+  }
+
+  .page-header__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .page-header__item {
+    position: relative;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    margin-bottom: 30px;
+    background-color: $color-lightgray;
+  }
+
+  .page-header__item::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z' fill='%232C2E3F' fill-opacity='0.5'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    top: 24px;
+    right: 5px;
+  }
+
+  .page-header__link {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .page-header--nojs{
+    display: flex;
+    flex-direction: column;
+
+    .page-header__menu {
+      display: block;
+      position: relative;
+      padding-top: 30px;
+      height: 100%;
+    }
+
+    .page-header__toggle {
+      display: none;
+    }
+  }
+
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .page-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    display: block;
+    order: 1;
+    padding: 25px 22px;
+    padding-bottom: 0;
+  }
+
+  .page-header__toggle {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $color-torquoise;
+    border: none;
+    order: 3;
+    box-sizing: border-box;
+  }
+
+  .page-header__toggle::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.8 21h22.4v-1H3.9v1zm0-6.3h22.4v-1H3.9v1zm0-7.2v1h22.4v-1H3.9z' fill='%23000'/%3E%3C/svg%3E%0A");
+    top: 11px;
+    left: 10px;
+  }
+
+  .page-header__menu {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 100px;
+    box-sizing: border-box;
+    background-color: $color-white;
+    order: 2;
+  }
+
+  .page-header--opened {
+    .page-header__toggle {
+      position: fixed;
+      right: 0;
+      background-color: $color-white;
+      }
+
+    .page-header__toggle::before {
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 23.7213L23 1M23 23.7213L1 1' stroke='%23141517' stroke-opacity='0.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      top: 13px;
+      left: 13px;
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  .page-header--closed {
+    .page-header__menu {
+      display: none;
+    }
+  }
+
+  .page-header__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .page-header__item {
+    position: relative;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    margin-bottom: 30px;
+    background-color: $color-lightgray;
+  }
+
+  .page-header__item::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z' fill='%232C2E3F' fill-opacity='0.5'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    top: 24px;
+    right: 5px;
+  }
+
+  .page-header__link {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .page-header--nojs{
+    display: flex;
+    flex-direction: column;
+
+    .page-header__menu {
+      display: block;
+      position: relative;
+      padding-top: 30px;
+      height: 100%;
+    }
+
+    .page-header__toggle {
+      display: none;
+    }
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__logo {
+    margin-left: 280px;
+  }
+
+  .page-header__list {
+    margin: 0;
+    padding: 0;
+    padding-top: 21px;
+    padding-bottom: 9px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 283px;
+    margin-right: 283px;
+    margin-bottom: 255px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid rgba($color-white, 0.2);
+  }
+
+  .page-header__link {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: -0.005em;
+    color: $color-white;
+    opacity: 0.7;
+    text-decoration: none;
+  }
+
+}
