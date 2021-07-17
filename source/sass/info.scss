@@ -15,7 +15,7 @@
     text-align: center;
     margin: 0;
     padding-bottom: 20px;
-    padding-left: 16px;
+    padding-left: 15px;
     padding-right: 16px;
     font-size: 30px;
     font-weight: 700;
@@ -67,13 +67,12 @@
 
 @media (min-width: $desktop-width) {
   .info {
-    position: relative;
-    padding-left: 280px;
-    padding-right: 280px;
     display: flex;
     justify-content: space-between;
     column-gap: 160px;
     padding-bottom: 240px;
+    max-width: 873px;
+    margin: 0 auto;
   }
 
   .info__title {
@@ -83,6 +82,7 @@
     letter-spacing: -0.034em;
     margin-top: 24px;
     margin-bottom: 25px;
+    margin-left: -2px;
   }
 
   .info__text {

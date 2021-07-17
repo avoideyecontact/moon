@@ -237,12 +237,18 @@
 
 @media (min-width: $desktop-width) {
 
+  .page-header {
+    max-width: 873px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .page-header__toggle {
     display: none;
   }
 
   .page-header__logo {
-    margin-left: 280px;
+    margin-left: -4px;
   }
 
   .page-header__list {
@@ -253,8 +259,6 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-left: 283px;
-    margin-right: 283px;
     margin-bottom: 255px;
     padding-left: 20px;
     padding-right: 20px;

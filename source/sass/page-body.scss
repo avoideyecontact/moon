@@ -9,7 +9,7 @@
   .page-body {
     background-image: url("../img/main/info/bike-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 390px;
+    background-size: contain;
     background-position: 50% 0;
   }
   @media (min-resolution: 2dppx) {
@@ -24,7 +24,7 @@
   .page-body {
     background-image: url("../img/main/info/bike-tablet.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 340px;
+    background-size: contain;
     background-position: 50% 0;
   }
   @media (min-resolution: 2dppx) {
