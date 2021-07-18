@@ -1,0 +1,120 @@
+.video {
+  position: relative;
+  text-align: center;
+  color: $color-white;
+}
+
+.video::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: $color-darkgray;
+  z-index: -1;
+}
+
+.video__mediaplayer {
+  position: relative;
+}
+
+.video__link {
+  position: absolute;
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg width='65' height='65' viewBox='0 0 65 65' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z' fill='%230AD9C6'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z' fill='%23070707'/%3E%3C/svg%3E%0A");
+  width: 65px;
+  height: 65px;
+  top: 50%;
+  left: 50%;
+  margin-top: -32.5px;
+  margin-left: -32.5px;
+}
+
+.video__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  margin: 0;
+}
+
+.video__text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  opacity: 0.7;
+  margin: 0;
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .video {
+    padding-top: 84px;
+  }
+
+  .video::before {
+    height: 384px;
+  }
+
+  .video__title {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .video__text {
+    padding-bottom: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .video {
+    padding-top: 70px;
+  }
+
+  .video::before {
+    height: 413px;
+  }
+
+  .video__link {
+    background-image: url("data:image/svg+xml,%3Csvg width='91' height='91' viewBox='0 0 91 91' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M45.1788 90.3576C70.1303 90.3576 90.3576 70.1303 90.3576 45.1788C90.3576 20.2272 70.1303 0 45.1788 0C20.2272 0 0 20.2272 0 45.1788C0 70.1303 20.2272 90.3576 45.1788 90.3576Z' fill='%230AD9C6'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M39.7573 32.5286L57.8288 45.1786L39.7573 57.8287V32.5286Z' fill='%23070707'/%3E%3C/svg%3E%0A");
+    width: 91px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -45px;
+  }
+
+  .video__title {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .video__text {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    padding-top: 120px;
+  }
+
+  .video::before {
+    height: 706px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .video__text {
+    padding-bottom: 56px;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
