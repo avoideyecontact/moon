@@ -12,12 +12,12 @@
     background-size: contain;
     background-position: 50% 0;
   }
+
   @media (min-resolution: 2dppx) {
     .page-body {
       background-image: url("../img/main/info/bike-mobile@2x.jpg");
     }
   }
-
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
@@ -27,12 +27,12 @@
     background-size: contain;
     background-position: 50% 0;
   }
+
   @media (min-resolution: 2dppx) {
     .page-body {
       background-image: url("../img/main/info/bike-tablet@2x.jpg");
     }
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -43,10 +43,10 @@
     background-size: contain;
     background-position: 50% 0;
   }
+
   @media (min-resolution: 2dppx) {
     .page-body {
       background-image: url("../img/main/info/bike-desktop@2x.jpg");
     }
   }
-
 }
