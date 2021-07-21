@@ -43,6 +43,7 @@
 .types__image {
   padding-top: 30px;
   padding-bottom: 20px;
+  border-radius: 25px;
 }
 
 @media (max-width: $tablet-width - 1px) {
@@ -82,6 +83,8 @@
   .types__list {
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: 3;
+    flex-basis: 0.1;
     justify-content: center;
     column-gap: 50px;
   }
@@ -98,6 +101,7 @@
   .types__item:nth-of-type(3)::after {
     width: 68px;
     height: 68px;
+    z-index: -1;
     top: -10px;
     right: -35px;
     background-image: url("data:image/svg+xml,%3Csvg width='68' height='68' viewBox='0 0 68 68' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='34' cy='34' r='27.5' stroke='%230AD9C6' stroke-width='13'/%3E%3C/svg%3E%0A");

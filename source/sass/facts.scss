@@ -41,7 +41,7 @@
     padding-right: 28px;
     padding-top: 30px;
     row-gap: 34px;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .facts__text {
@@ -81,6 +81,7 @@
   }
 
   .facts__list {
+    margin: 0 auto;
     padding-top: 48px;
     justify-content: space-between;
     padding-left: 137px;

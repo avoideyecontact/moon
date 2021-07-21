@@ -1,52 +1,58 @@
 .page-body {
+  position: relative;
   margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
-  min-width: $mobile-width;
 }
 
+// .page-body::before {
+//   position: absolute;
+//   content: "";
+//   width: 100%;
+//   height: 200px;
+// }
 
-@media (max-width: $tablet-width - 1px) {
-  .page-body {
-    background-image: url("../img/main/info/bike-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 0;
-  }
+// @media (max-width: $tablet-width - 1px) {
+//   .page-body {
+//     background-image: url("../img/main/info/bike-mobile.jpg");
+//     background-repeat: no-repeat;
+//     background-size: 320px 390px;
+//     background-position: 50% 0;
+//   }
 
-  @media (min-resolution: 2dppx) {
-    .page-body {
-      background-image: url("../img/main/info/bike-mobile@2x.jpg");
-    }
-  }
-}
+//   @media (min-resolution: 2dppx) {
+//     .page-body {
+//       background-image: url("../img/main/info/bike-mobile@2x.jpg");
+//     }
+//   }
+// }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-  .page-body {
-    background-image: url("../img/main/info/bike-tablet.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 0;
-  }
+// @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+//   .page-body {
+//     background-image: url("../img/main/info/bike-tablet.jpg");
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: 50% 0;
+//   }
 
-  @media (min-resolution: 2dppx) {
-    .page-body {
-      background-image: url("../img/main/info/bike-tablet@2x.jpg");
-    }
-  }
-}
+//   @media (min-resolution: 2dppx) {
+//     .page-body {
+//       background-image: url("../img/main/info/bike-tablet@2x.jpg");
+//     }
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  .page-body {
-    position: relative;
-    background-image: url("../img/main/info/bike-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 0;
-  }
+// @media (min-width: $desktop-width) {
+//   .page-body {
+//     position: relative;
+//     background-image: url("../img/main/info/bike-desktop.jpg");
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: 50% 0;
+//   }
 
-  @media (min-resolution: 2dppx) {
-    .page-body {
-      background-image: url("../img/main/info/bike-desktop@2x.jpg");
-    }
-  }
-}
+//   @media (min-resolution: 2dppx) {
+//     .page-body {
+//       background-image: url("../img/main/info/bike-desktop@2x.jpg");
+//     }
+//   }
+// }
