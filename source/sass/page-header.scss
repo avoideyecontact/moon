@@ -28,6 +28,17 @@
   z-index: 1;
 }
 
+.page-header__link {
+  text-decoration: none;
+}
+
+.page-header__link:active {
+  color: $color-fadedgray;
+  opacity: 1;
+  background-color: $color-white;
+  border-radius: 5px;
+}
+
 @media (max-width: $tablet-width - 1px) {
   .page-header {
     display: flex;
@@ -81,8 +92,8 @@
 
   .page-header__menu {
     position: fixed;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     padding-top: 100px;
     box-sizing: border-box;
     background-color: $color-white;
@@ -112,13 +123,13 @@
     }
   }
 
-  .page-header__list {
+  .page-header ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  .page-header__item {
+  .page-header li {
     position: relative;
     padding-top: 17px;
     padding-bottom: 17px;
@@ -127,7 +138,7 @@
     background-color: $color-lightgray;
   }
 
-  .page-header__item::after {
+  .page-header li::after {
     position: absolute;
     content: "";
     width: 25px;
@@ -141,7 +152,6 @@
   .page-header__link {
     font-size: 20px;
     color: $color-black;
-    text-decoration: none;
   }
 
   .page-header--nojs {
@@ -245,13 +255,13 @@
     }
   }
 
-  .page-header__list {
+  .page-header ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  .page-header__item {
+  .page-header li {
     position: relative;
     padding-top: 17px;
     padding-bottom: 17px;
@@ -260,7 +270,7 @@
     background-color: $color-lightgray;
   }
 
-  .page-header__item::after {
+  .page-header li::after {
     position: absolute;
     content: "";
     width: 25px;
@@ -274,7 +284,6 @@
   .page-header__link {
     font-size: 20px;
     color: $color-black;
-    text-decoration: none;
   }
 
   .page-header--nojs {
@@ -296,7 +305,6 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    // max-width: 873px;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -331,7 +339,7 @@
     left: 50%;
   }
 
-  .page-header__list {
+  .page-header ul {
     margin: 0 auto;
     padding: 0;
     padding-top: 21px;
@@ -344,6 +352,7 @@
     padding-right: 20px;
     border-bottom: 1px solid rgba($color-white, 0.2);
     max-width: 873px;
+    box-sizing: border-box;
   }
 
   .page-header__link {
@@ -353,6 +362,5 @@
     letter-spacing: -0.01em;
     color: $color-white;
     opacity: 0.7;
-    text-decoration: none;
   }
 }

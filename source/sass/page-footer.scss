@@ -1,3 +1,7 @@
+.page-footer__link:active {
+  outline: 3px solid $color-torquoise;
+}
+
 .page-footer__link--mail::before {
   position: absolute;
   content: "";
@@ -20,6 +24,17 @@
   top: -4px;
 }
 
+.page-footer__map {
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.5s;
+}
+
+.page-footer__map:active {
+  transition: transform 0.5s;
+  transform: scale(1.05);
+}
+
 @media (max-width: $tablet-width - 1px) {
   .page-footer {
     text-align: center;
@@ -27,7 +42,7 @@
     padding-bottom: 50px;
   }
 
-  .page-footer__title {
+  .page-footer h2 {
     font-size: 18px;
     font-weight: 600;
     line-height: 30px;
@@ -36,7 +51,7 @@
     padding-bottom: 19px;
   }
 
-  .page-footer__text {
+  .page-footer p {
     font-size: 17px;
     font-weight: 400;
     line-height: 31px;
@@ -49,11 +64,12 @@
   }
 
   .page-footer__map {
-    display: block;
-    padding-bottom: 27px;
+    padding-bottom: 30px;
+    width: 320px;
+    height: 250px;
   }
 
-  .page-footer__list {
+  .page-footer ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -87,11 +103,11 @@
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .page-footer {
     text-align: center;
-    padding-top: 70px;
+    padding-top: 65px;
     padding-bottom: 54px;
   }
 
-  .page-footer__title {
+  .page-footer h2 {
     font-size: 24px;
     font-weight: 600;
     line-height: 30px;
@@ -100,7 +116,7 @@
     padding-bottom: 20px;
   }
 
-  .page-footer__text {
+  .page-footer p {
     font-size: 17px;
     font-weight: 400;
     line-height: 31px;
@@ -110,11 +126,12 @@
   }
 
   .page-footer__map {
-    display: block;
-    padding-bottom: 21px;
+    padding-bottom: 25px;
+    width: 698px;
+    height: 545px;
   }
 
-  .page-footer__list {
+  .page-footer ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -147,11 +164,11 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 146px;
     padding-bottom: 98px;
   }
 
-  .page-footer__title {
+  .page-footer h2 {
     font-size: 30px;
     font-weight: 600;
     line-height: 30px;
@@ -160,7 +177,7 @@
     padding-bottom: 30px;
   }
 
-  .page-footer__text {
+  .page-footer p {
     font-size: 17px;
     font-weight: 400;
     line-height: 31px;
@@ -171,11 +188,12 @@
   }
 
   .page-footer__map {
-    display: block;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
+    width: 957px;
+    height: 530px;
   }
 
-  .page-footer__list {
+  .page-footer ul {
     padding: 0;
     margin: 0;
     list-style: none;

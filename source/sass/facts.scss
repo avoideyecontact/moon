@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.facts__title {
+.facts h2 {
   font-size: 24px;
   font-weight: 600;
   line-height: 41px;
@@ -10,7 +10,7 @@
   margin: 0;
 }
 
-.facts__list {
+.facts ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -19,7 +19,7 @@
   flex-wrap: wrap;
 }
 
-.facts__number {
+.facts h3 {
   color: $color-torquoise;
   font-size: 28px;
   font-weight: 700;
@@ -28,7 +28,7 @@
   margin: 0;
 }
 
-.facts__text {
+.facts p {
   margin: 0;
   font-size: 22px;
   line-height: 34px;
@@ -36,7 +36,7 @@
 }
 
 @media (max-width: $tablet-width - 1px) {
-  .facts__list {
+  .facts ul {
     padding-left: 29px;
     padding-right: 28px;
     padding-top: 30px;
@@ -44,29 +44,29 @@
     justify-content: center;
   }
 
-  .facts__text {
+  .facts p {
     font-size: 18px;
     padding-top: 17px;
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-  .facts__list {
+  .facts ul {
     padding-top: 30px;
     padding-bottom: 70px;
     column-gap: 30px;
     row-gap: 44px;
   }
 
-  .facts__item {
+  .facts li {
     max-width: 263px;
   }
 
-  .facts__number {
+  .facts h3 {
     padding-bottom: 15px;
   }
 
-  .facts__text {
+  .facts p {
     font-size: 22px;
     line-height: 34px;
     letter-spacing: -0.5px;
@@ -74,13 +74,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .facts__title {
+  .facts {
+    padding-top: 113px;
+    padding-bottom: 153px;
+  }
+
+  .facts h2 {
     font-size: 30px;
     line-height: 30px;
     letter-spacing: -0.01em;
   }
 
-  .facts__list {
+  .facts ul {
     margin: 0 auto;
     padding-top: 48px;
     justify-content: space-between;
@@ -89,11 +94,11 @@
     max-width: $max-desktop-width;
   }
 
-  .facts__item {
+  .facts li {
     max-width: 263px;
   }
 
-  .facts__number {
+  .facts h3 {
     padding-bottom: 15px;
   }
 }

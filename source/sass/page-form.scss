@@ -1,4 +1,4 @@
-.page-form__input {
+.page-form input {
   box-sizing: border-box;
   width: 100%;
   background-color: $color-white;
@@ -13,7 +13,7 @@
   line-height: 24px;
 }
 
-.page-form__button {
+.page-form button {
   width: 100%;
   border: none;
   border-radius: 6px;
@@ -23,6 +23,13 @@
   font-size: 15px;
   font-weight: 600;
   line-height: 21px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.page-form button:active {
+  transition: transform 0.5s;
+  transform: scale(1.05);
 }
 
 @media (max-width: $tablet-width - 1px) {
@@ -30,7 +37,7 @@
     padding-top: 70px;
   }
 
-  .page-form__text {
+  .page-form h2 {
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
@@ -38,6 +45,10 @@
     text-align: center;
     margin: 0;
     padding-bottom: 20px;
+  }
+
+  .page-form input {
+    margin-bottom: 19px;
   }
 }
 
@@ -46,18 +57,18 @@
     padding-top: 70px;
     padding-left: 224px;
     padding-right: 223px;
-    max-width: 321px;
     margin: 0 auto;
   }
 
-  .page-form__text {
+  .page-form h2 {
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
     letter-spacing: -0.01em;
     text-align: center;
-    margin: 0;
-    padding-bottom: 20px;
+    margin: 0 auto;
+    padding-bottom: 28px;
+    max-width: 321px;
   }
 }
 
@@ -71,14 +82,7 @@
     width: 100%;
   }
 
-  .page-form__title {
-    font-size: 46px;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: -0.01em;
-  }
-
-  .page-form__text {
+  .page-form h2 {
     font-size: 17px;
     font-weight: 600;
     line-height: 28px;
@@ -86,5 +90,6 @@
     text-align: center;
     color: $color-white;
     opacity: 0.8;
+    margin-bottom: 20px;
   }
 }
