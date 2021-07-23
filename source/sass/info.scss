@@ -11,6 +11,13 @@
     padding: 70px 16px 70px 15px;
   }
 
+  .info--nojs {
+    h1,
+    p {
+      color: $color-black;
+    }
+  }
+
   .info__wrapper {
     min-height: 210px;
   }
@@ -42,6 +49,13 @@
   .info {
     padding-top: 84px;
     padding-bottom: 70px;
+  }
+
+  .info--nojs {
+    h1,
+    p {
+      color: $color-black;
+    }
   }
 
   .info h1 {
