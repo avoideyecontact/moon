@@ -50,10 +50,10 @@
       <form class="page-form" action="https://echo.htmlacademy.ru/">
         <h2>Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
         <label>
-          <input type="tel" maxlength="20" required placeholder="Введите Ваше Имя" name="user-name">
+          <input type="text" maxlength="20" required placeholder="Введите Ваше Имя" name="user-name">
         </label>
         <label>
-          <input type="tel" pattern="[0-9]{11}" maxlength="11" required placeholder="Введите Ваш номер телефона" name="user-phone-number">
+          <input id="phone-mask" type="tel" required placeholder="Введите Ваш номер телефона" name="user-phone-number">
         </label>
         <button type="submit" title="Кнопка отправки формы">Подобрать велосипед мечты</button>
       </form>
@@ -141,6 +141,7 @@
       </li>
     </ul>
   </footer>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>
 

@@ -13,6 +13,18 @@
   line-height: 24px;
 }
 
+.page-form input:valid {
+  color: $color-black;
+}
+
+.page-form input[type="text"] {
+  color: $color-black;
+}
+
+.page-form input[type="tel"] {
+  color: $color-black;
+}
+
 .page-form button {
   width: 100%;
   border: none;
