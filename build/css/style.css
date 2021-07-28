@@ -131,11 +131,11 @@
             justify-content: space-between; }
   .page-header::before {
     height: 390px;
-    background-image: url("../img/main/info/bike-mobile.jpg");
-    background-size: 320px 390px; } }
+    background-image: url("../img/main/info/bike-mobile.webp");
+    background-size: cover; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
     .page-header::before .page-header {
-      background-image: url("../img/main/info/bike-mobile@2x.jpg"); } }
+      background-image: url("../img/main/info/bike-mobile@2x.webp"); } }
 
 @media (max-width: 767px) {
   .page-header::after {
@@ -242,11 +242,11 @@
             justify-content: space-between; }
   .page-header::before {
     height: 340px;
-    background-image: url("../img/main/info/bike-tablet.jpg");
-    background-size: 767px 340px; } }
+    background-image: url("../img/main/info/bike-tablet.webp");
+    background-size: cover; } }
   @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 2dppx) {
     .page-header::before .page-header {
-      background-image: url("../img/main/info/bike-tablet@2x.jpg"); } }
+      background-image: url("../img/main/info/bike-tablet@2x.webp"); } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .page-header::after {
@@ -349,11 +349,11 @@
             box-sizing: border-box; }
   .page-header::before {
     height: 825px;
-    background-image: url("../img/main/info/bike-desktop.jpg");
-    background-size: 1440px 825px; } }
+    background-image: url("../img/main/info/bike-desktop.webp");
+    background-size: cover; } }
   @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 2dppx) {
     .page-header::before .page-header {
-      background-image: url("../img/main/info/bike-desktop@2x.jpg"); } }
+      background-image: url("../img/main/info/bike-desktop@2x.webp"); } }
 
 @media (min-width: 1024px) {
   .page-header::after {
@@ -392,7 +392,16 @@
     line-height: 32px;
     letter-spacing: -0.01em;
     color: #ffffff;
-    opacity: 0.7; } }
+    opacity: 0.7; }
+  .page-header__menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .page-header__menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 .page-body {
   position: relative;
@@ -421,7 +430,8 @@
     padding-right: 16px;
     font-size: 30px;
     font-weight: 700;
-    letter-spacing: -0.04em; }
+    letter-spacing: -0.04em;
+    height: 84px; }
   .info p {
     text-align: center;
     margin: 0;
@@ -430,7 +440,8 @@
     line-height: 32px;
     letter-spacing: -0.01em;
     opacity: 0.8;
-    padding-bottom: 70px; } }
+    padding-bottom: 70px;
+    height: 96px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .info {
@@ -530,7 +541,11 @@
     row-gap: 34px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .facts p {
     font-size: 18px;
     padding-top: 17px; } }
@@ -563,14 +578,13 @@
   .facts ul {
     margin: 0 auto;
     padding-top: 48px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 137px;
-    padding-right: 137px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
     max-width: 1440px; }
   .facts li {
-    max-width: 263px; }
+    max-width: 263px;
+    margin: 0 auto; }
   .facts h3 {
     padding-bottom: 15px; } }
 
@@ -860,7 +874,9 @@
        -moz-column-gap: 50px;
             column-gap: 50px;
     row-gap: 40px;
-    padding-top: 30px; }
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px; }
   .types img {
     padding-top: 0;
     padding-bottom: 15px; }
@@ -905,7 +921,8 @@
         flex-wrap: wrap;
     -webkit-column-gap: 50px;
        -moz-column-gap: 50px;
-            column-gap: 50px; }
+            column-gap: 50px;
+    row-gap: 50px; }
   .types__item:first-of-type {
     top: 10px; }
   .types__item:nth-of-type(2n) {
@@ -936,7 +953,7 @@
     right: -36px;
     background-image: url("data:image/svg+xml,%3Csvg width='95' height='95' viewBox='0 0 95 95' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='47.5' cy='47.5' r='39' stroke='%230AD9C6' stroke-width='17'/%3E%3C/svg%3E%0A"); } }
 
-@media (min-width: 1024px) and (max-width: 1125px) {
+@media (min-width: 1024px) and (max-width: 1225px) {
   .types__list {
     row-gap: 50px; } }
 
@@ -1120,6 +1137,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 25px;
     -webkit-column-gap: 127px;
        -moz-column-gap: 127px;
             column-gap: 127px; }

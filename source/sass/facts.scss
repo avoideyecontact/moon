@@ -42,6 +42,7 @@
     padding-top: 30px;
     row-gap: 34px;
     justify-content: center;
+    flex-direction: column;
   }
 
   .facts p {
@@ -88,14 +89,24 @@
   .facts ul {
     margin: 0 auto;
     padding-top: 48px;
-    justify-content: space-between;
-    padding-left: 137px;
-    padding-right: 137px;
+
+    // justify-content: center;
+    // column-gap: 45px;
+
+    // justify-content: space-between;
+    // padding-left: 137px;
+    // padding-right: 137px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+
     max-width: $max-desktop-width;
   }
 
   .facts li {
     max-width: 263px;
+    margin: 0 auto;
   }
 
   .facts h3 {

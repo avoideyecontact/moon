@@ -96,6 +96,8 @@
     column-gap: 50px;
     row-gap: 40px;
     padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .types img {
@@ -148,6 +150,7 @@
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 50px;
+    row-gap: 50px;
   }
 
   .types__item:first-of-type {
@@ -192,8 +195,22 @@
   }
 }
 
-@media (min-width: $desktop-width) and (max-width: 1125px) {
+@media (min-width: $desktop-width) and (max-width: 1225px) {
   .types__list {
     row-gap: 50px;
   }
 }
+
+// @media (min-width: 1126px) and (max-width: 1235px) {
+//   .types__list {
+//     padding-left: 50px;
+//     padding-right: 50px;
+//   }
+// }
+
+// @media (min-width: 910px) and (max-width: 965px) {
+//   .types__list {
+//     padding-left: 50px;
+//     padding-right: 50px;
+//   }
+// }
