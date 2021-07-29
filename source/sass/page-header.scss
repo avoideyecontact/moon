@@ -48,12 +48,12 @@
 
   .page-header::before {
     height: 390px;
-    background-image: url("../img/main/info/bike-mobile.webp");
+    background-image: url("../img/main/info/bike-mobile.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
       .page-header {
-        background-image: url("../img/main/info/bike-mobile@2x.webp");
+        background-image: url("../img/main/info/bike-mobile@2x.jpg");
       }
     }
   }
@@ -180,12 +180,12 @@
 
   .page-header::before {
     height: 340px;
-    background-image: url("../img/main/info/bike-tablet.webp");
+    background-image: url("../img/main/info/bike-tablet.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
       .page-header {
-        background-image: url("../img/main/info/bike-tablet@2x.webp");
+        background-image: url("../img/main/info/bike-tablet@2x.jpg");
       }
     }
   }
@@ -312,12 +312,12 @@
 
   .page-header::before {
     height: 825px;
-    background-image: url("../img/main/info/bike-desktop.webp");
+    background-image: url("../img/main/info/bike-desktop.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
       .page-header {
-        background-image: url("../img/main/info/bike-desktop@2x.webp");
+        background-image: url("../img/main/info/bike-desktop@2x.jpg");
       }
     }
   }

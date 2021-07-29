@@ -1174,3 +1174,7 @@
 
 .page-header__menu {
   overflow: scroll; }
+
+@media (min-width: 1024px) {
+  .page-header__menu {
+    overflow: hidden; } }
