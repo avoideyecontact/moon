@@ -131,11 +131,11 @@
             justify-content: space-between; }
   .page-header::before {
     height: 390px;
-    background-image: url("../img/main/info/bike-mobile.webp");
+    background-image: url("../img/main/info/bike-mobile.jpg");
     background-size: cover; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
     .page-header::before .page-header {
-      background-image: url("../img/main/info/bike-mobile@2x.webp"); } }
+      background-image: url("../img/main/info/bike-mobile@2x.jpg"); } }
 
 @media (max-width: 767px) {
   .page-header::after {
@@ -242,11 +242,11 @@
             justify-content: space-between; }
   .page-header::before {
     height: 340px;
-    background-image: url("../img/main/info/bike-tablet.webp");
+    background-image: url("../img/main/info/bike-tablet.jpg");
     background-size: cover; } }
   @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 2dppx) {
     .page-header::before .page-header {
-      background-image: url("../img/main/info/bike-tablet@2x.webp"); } }
+      background-image: url("../img/main/info/bike-tablet@2x.jpg"); } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .page-header::after {
@@ -349,11 +349,11 @@
             box-sizing: border-box; }
   .page-header::before {
     height: 825px;
-    background-image: url("../img/main/info/bike-desktop.webp");
+    background-image: url("../img/main/info/bike-desktop.jpg");
     background-size: cover; } }
   @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 2dppx) {
     .page-header::before .page-header {
-      background-image: url("../img/main/info/bike-desktop@2x.webp"); } }
+      background-image: url("../img/main/info/bike-desktop@2x.jpg"); } }
 
 @media (min-width: 1024px) {
   .page-header::after {
@@ -376,9 +376,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-column-gap: 130px;
+       -moz-column-gap: 130px;
+            column-gap: 130px;
     margin-bottom: 255px;
     padding-left: 20px;
     padding-right: 20px;
@@ -968,6 +971,11 @@
   .types__list {
     row-gap: 50px; } }
 
+@media (min-width: 1126px) and (max-width: 1235px) {
+  .types__list {
+    padding-left: 50px;
+    padding-right: 50px; } }
+
 .page-footer__link:active {
   outline: 3px solid #0ad9c6; }
 
@@ -1006,6 +1014,11 @@
   transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform: scale(1.05);
           transform: scale(1.05); }
+
+.page-footer ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 25px; }
 
 @media (max-width: 767px) {
   .page-footer {
@@ -1148,9 +1161,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    row-gap: 25px;
     -webkit-column-gap: 127px;
        -moz-column-gap: 127px;
             column-gap: 127px; }

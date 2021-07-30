@@ -143,6 +143,7 @@
     font-weight: 600;
     line-height: 34px;
     letter-spacing: -0.5px;
+    max-width: 350px;
   }
 
   .types__list {
@@ -201,16 +202,9 @@
   }
 }
 
-// @media (min-width: 1126px) and (max-width: 1235px) {
-//   .types__list {
-//     padding-left: 50px;
-//     padding-right: 50px;
-//   }
-// }
-
-// @media (min-width: 910px) and (max-width: 965px) {
-//   .types__list {
-//     padding-left: 50px;
-//     padding-right: 50px;
-//   }
-// }
+@media (min-width: 1126px) and (max-width: 1235px) {
+  .types__list {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

@@ -346,7 +346,8 @@
     padding-bottom: 9px;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    column-gap: 130px;
     margin-bottom: 255px;
     padding-left: 20px;
     padding-right: 20px;
